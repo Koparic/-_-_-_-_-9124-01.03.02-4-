@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskAdding.cs",
+              "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\TaskAdding.cs",
+              "RelativeDocumentMoniker": "TaskAdding.cs",
+              "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\TaskAdding.cs",
+              "RelativeToolTip": "TaskAdding.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAjwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T10:14:56.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskAdding.cs [Design]",
+              "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\TaskAdding.cs",
+              "RelativeDocumentMoniker": "TaskAdding.cs",
+              "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\TaskAdding.cs [Design]",
+              "RelativeToolTip": "TaskAdding.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T08:38:55.458Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T00:51:10.347Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAYwEYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T06:06:20.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAewBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T02:15:40.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T01:02:33.589Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\bin\Debug\ToDoList.exe.config
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\bin\Debug\ToDoList.exe
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\bin\Debug\ToDoList.pdb
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.csproj.AssemblyReference.cache
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.Form1.resources
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.Properties.Resources.resources
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.csproj.GenerateResource.cache
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.exe
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.pdb
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.exe.config
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.TaskAdding.resources
