@@ -30,7 +30,7 @@
         {
             this.AddBttn = new System.Windows.Forms.Button();
             this.DeleteBttn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TaskTable = new System.Windows.Forms.DataGridView();
             this.TaskName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Priority = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,7 +38,8 @@
             this.EndingDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.EditBttn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.StatusBttn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.TaskTable)).BeginInit();
             this.SuspendLayout();
             // 
             // AddBttn
@@ -49,6 +50,7 @@
             this.AddBttn.TabIndex = 0;
             this.AddBttn.Text = "Add";
             this.AddBttn.UseVisualStyleBackColor = true;
+            this.AddBttn.Click += new System.EventHandler(this.AddBttn_Click);
             // 
             // DeleteBttn
             // 
@@ -58,29 +60,33 @@
             this.DeleteBttn.TabIndex = 1;
             this.DeleteBttn.Text = "Delete";
             this.DeleteBttn.UseVisualStyleBackColor = true;
+            this.DeleteBttn.Click += new System.EventHandler(this.DeleteBttn_Click);
             // 
-            // dataGridView1
+            // TaskTable
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Azure;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TaskTable.AllowUserToAddRows = false;
+            this.TaskTable.AllowUserToDeleteRows = false;
+            this.TaskTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TaskTable.BackgroundColor = System.Drawing.Color.Azure;
+            this.TaskTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TaskTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TaskName,
             this.Priority,
             this.Category,
             this.CreationDate,
             this.EndingDate,
             this.Status});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 66);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(929, 639);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.TaskTable.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.TaskTable.Location = new System.Drawing.Point(12, 66);
+            this.TaskTable.Name = "TaskTable";
+            this.TaskTable.ReadOnly = true;
+            this.TaskTable.RowHeadersVisible = false;
+            this.TaskTable.RowHeadersWidth = 51;
+            this.TaskTable.RowTemplate.Height = 24;
+            this.TaskTable.ShowEditingIcon = false;
+            this.TaskTable.Size = new System.Drawing.Size(929, 639);
+            this.TaskTable.TabIndex = 2;
+            this.TaskTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // TaskName
             // 
@@ -122,12 +128,12 @@
             this.Status.HeaderText = "Status";
             this.Status.Items.AddRange(new object[] {
             "Done",
+            "In Work",
             "Cancelled",
-            "Failed",
-            "In Progress"});
-            this.Status.MaxDropDownItems = 4;
+            "Failed"});
             this.Status.MinimumWidth = 6;
             this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
             this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Status.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
@@ -139,19 +145,30 @@
             this.EditBttn.TabIndex = 3;
             this.EditBttn.Text = "Edit";
             this.EditBttn.UseVisualStyleBackColor = true;
+            this.EditBttn.Click += new System.EventHandler(this.EditBttn_Click);
+            // 
+            // StatusBttn
+            // 
+            this.StatusBttn.Location = new System.Drawing.Point(12, 12);
+            this.StatusBttn.Name = "StatusBttn";
+            this.StatusBttn.Size = new System.Drawing.Size(107, 35);
+            this.StatusBttn.TabIndex = 4;
+            this.StatusBttn.Text = "Set Status";
+            this.StatusBttn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 717);
+            this.Controls.Add(this.StatusBttn);
             this.Controls.Add(this.EditBttn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.TaskTable);
             this.Controls.Add(this.DeleteBttn);
             this.Controls.Add(this.AddBttn);
             this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "ToDoList";
+            ((System.ComponentModel.ISupportInitialize)(this.TaskTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -160,14 +177,15 @@
 
         private System.Windows.Forms.Button AddBttn;
         private System.Windows.Forms.Button DeleteBttn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView TaskTable;
+        private System.Windows.Forms.Button EditBttn;
         private System.Windows.Forms.DataGridViewTextBoxColumn TaskName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Priority;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn CreationDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn EndingDate;
         private System.Windows.Forms.DataGridViewComboBoxColumn Status;
-        private System.Windows.Forms.Button EditBttn;
+        private System.Windows.Forms.Button StatusBttn;
     }
 }
 

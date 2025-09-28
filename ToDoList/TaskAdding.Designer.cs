@@ -34,10 +34,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Cancellbttn = new System.Windows.Forms.Button();
             this.ApplyBttn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.endingTime = new System.Windows.Forms.DateTimePicker();
+            this.priorityText = new System.Windows.Forms.DomainUpDown();
+            this.categoryText = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -84,6 +84,7 @@
             this.Cancellbttn.TabIndex = 4;
             this.Cancellbttn.Text = "Cancel";
             this.Cancellbttn.UseVisualStyleBackColor = true;
+            this.Cancellbttn.Click += new System.EventHandler(this.Cancellbttn_Click);
             // 
             // ApplyBttn
             // 
@@ -95,36 +96,42 @@
             this.ApplyBttn.UseVisualStyleBackColor = true;
             this.ApplyBttn.Click += new System.EventHandler(this.ApplyBttn_Click);
             // 
-            // textBox1
+            // nameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 47);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(718, 58);
-            this.textBox1.TabIndex = 6;
+            this.nameTextBox.Location = new System.Drawing.Point(25, 47);
+            this.nameTextBox.Multiline = true;
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(718, 58);
+            this.nameTextBox.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // endingTime
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(503, 154);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(240, 22);
-            this.dateTimePicker1.TabIndex = 7;
+            this.endingTime.Location = new System.Drawing.Point(502, 150);
+            this.endingTime.Name = "endingTime";
+            this.endingTime.Size = new System.Drawing.Size(240, 22);
+            this.endingTime.TabIndex = 7;
             // 
-            // textBox2
+            // priorityText
             // 
-            this.textBox2.Location = new System.Drawing.Point(255, 154);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 22);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.priorityText.Items.Add("High");
+            this.priorityText.Items.Add("Medium");
+            this.priorityText.Items.Add("Low");
+            this.priorityText.Location = new System.Drawing.Point(25, 154);
+            this.priorityText.Name = "priorityText";
+            this.priorityText.Size = new System.Drawing.Size(224, 22);
+            this.priorityText.TabIndex = 9;
             // 
-            // comboBox1
+            // categoryText
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(25, 154);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(224, 24);
-            this.comboBox1.TabIndex = 9;
+            this.categoryText.FormattingEnabled = true;
+            this.categoryText.Items.AddRange(new object[] {
+            "Work",
+            "Home",
+            "Special"});
+            this.categoryText.Location = new System.Drawing.Point(255, 152);
+            this.categoryText.Name = "categoryText";
+            this.categoryText.Size = new System.Drawing.Size(241, 24);
+            this.categoryText.TabIndex = 10;
             // 
             // TaskAdding
             // 
@@ -132,10 +139,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 263);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.categoryText);
+            this.Controls.Add(this.priorityText);
+            this.Controls.Add(this.endingTime);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.ApplyBttn);
             this.Controls.Add(this.Cancellbttn);
             this.Controls.Add(this.label4);
@@ -159,9 +166,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Cancellbttn;
         private System.Windows.Forms.Button ApplyBttn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.DateTimePicker endingTime;
+        private System.Windows.Forms.DomainUpDown priorityText;
+        private System.Windows.Forms.ComboBox categoryText;
     }
 }
