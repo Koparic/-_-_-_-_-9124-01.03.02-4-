@@ -10,3 +10,4 @@ D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.p
 D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.exe.config
 D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.TaskAdding.resources
 D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.Form1.resources
+D:\University\ООП_Git\-_-_-_-_-9124-01.03.02-4-\ToDoList\obj\Debug\ToDoList.StatusForm.resources
