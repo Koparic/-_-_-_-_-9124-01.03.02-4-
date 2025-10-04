@@ -33,6 +33,7 @@
             this.TaskTable = new System.Windows.Forms.DataGridView();
             this.EditBttn = new System.Windows.Forms.Button();
             this.StatusBttn = new System.Windows.Forms.Button();
+            this.Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TaskName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Priority = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +71,7 @@
             this.TaskTable.BackgroundColor = System.Drawing.Color.Azure;
             this.TaskTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TaskTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Index,
             this.TaskName,
             this.Priority,
             this.Category,
@@ -107,12 +109,25 @@
             this.StatusBttn.UseVisualStyleBackColor = true;
             this.StatusBttn.Click += new System.EventHandler(this.StatusBttn_Click);
             // 
+            // Index
+            // 
+            this.Index.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Index.Frozen = true;
+            this.Index.HeaderText = "№";
+            this.Index.MinimumWidth = 6;
+            this.Index.Name = "Index";
+            this.Index.ReadOnly = true;
+            this.Index.Width = 50;
+            // 
             // TaskName
             // 
+            this.TaskName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.TaskName.Frozen = true;
             this.TaskName.HeaderText = "Name";
             this.TaskName.MinimumWidth = 6;
             this.TaskName.Name = "TaskName";
             this.TaskName.ReadOnly = true;
+            this.TaskName.Width = 154;
             // 
             // Priority
             // 
@@ -174,6 +189,7 @@
         private System.Windows.Forms.DataGridView TaskTable;
         private System.Windows.Forms.Button EditBttn;
         private System.Windows.Forms.Button StatusBttn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Index;
         private System.Windows.Forms.DataGridViewTextBoxColumn TaskName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Priority;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;

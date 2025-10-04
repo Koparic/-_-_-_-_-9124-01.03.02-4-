@@ -10,57 +10,48 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static ToDoList.Form1.Task;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ToDoList
 {
     public partial class Form1 : Form
     {
-        public class Task
-        {
-            public struct task_struct
-            {
-                public string name;
-                public string priority;
-                public string category;
-                public DateTime start;
-                public DateTime end;
-                public string status;
-            }
-
-            public static task_struct Row_to_Struct(DataGridViewRow row)
-            {
-                task_struct ts = new task_struct();
-                ts.name = row.Cells["TaskName"].Value.ToString();
-                ts.priority = row.Cells["Priority"].Value.ToString();
-                ts.category = row.Cells["Category"].Value.ToString();
-                ts.start = DateTime.Parse(row.Cells["CreationDate"].Value.ToString());
-                ts.end = DateTime.Parse(row.Cells["EndingDate"].Value.ToString());
-                ts.status = row.Cells["Status"].Value == null ? null : row.Cells["Status"].Value.ToString();
-                return ts;
-            }
-        }
+        public List<Task> task_list = new List<Task>();
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        public void AddTask(task_struct task, bool e, int rowNum)
+        private void Update_Row(int rowIndex, Task task)
         {
-            if (e)
+            DataGridViewRow new_row = task.Task_to_Row(TaskTable);
+            for (int i = 0; i < TaskTable.Rows[rowIndex].Cells.Count; i++)
             {
-                TaskTable.Rows.Remove(TaskTable.Rows[rowNum]);
+                TaskTable.Rows[rowIndex].Cells[i].Value = new_row.Cells[i].Value;
             }
-            TaskTable.Rows.Add(task.name, task.priority.ToString(), task.category, task.start.ToShortDateString(), task.end.ToShortDateString(), task.status);
-        }
-
-
-        public void StatusChange(int row, string status)
-        {
-            TaskTable.Rows[row].Cells["Status"].Value = status;
             Color c;
-            switch(status){
+            switch (task.category)
+            {
+                case "Work":
+                    c = Color.Bisque;
+                    break;
+
+                case "Home":
+                    c = Color.LightBlue; break;
+
+                case "Special":
+                    c = Color.Lavender; break;
+
+                default:
+                    c = Color.Pink; break;
+            }
+            if (c != Color.Empty)
+            {
+                foreach (DataGridViewCell i in TaskTable.Rows[rowIndex].Cells) i.Style.BackColor = c;
+            }
+            switch (task.status)
+            {
                 case "Done":
                     c = Color.LightGreen;
                     break;
@@ -75,18 +66,41 @@ namespace ToDoList
                     c = Color.DarkGray; break;
 
                 default:
-                    c = Color.Empty; break;
+                    break;
             }
-            if (c != Color.Empty)
-            {
-                foreach (DataGridViewCell i in TaskTable.Rows[row].Cells) i.Style.BackColor = c;
+            TaskTable.Rows[rowIndex].Cells["Status"].Style.BackColor = c;
+        }
 
+        private void Update_Table()
+        {
+            TaskTable.Rows.Clear();
+            foreach (Task task in task_list)
+            {
+                Update_Row(TaskTable.Rows.Add(task.Task_to_Row(TaskTable)), task);
             }
+        }
+
+        public void AddTask(Task task, bool e, int rowNum)
+        {
+            if (e)
+            {
+                task_list[task.index] = task;
+            }
+            task_list.Add(task);
+            Update_Table();
+        }
+
+
+        public void StatusChange(int row, string status)
+        {
+            int task_index = Convert.ToInt32(TaskTable.Rows[row].Cells["Index"].Value);
+            task_list[task_index].status = status;
+            Update_Row(row, task_list[task_index]);
         }
 
         private void AddBttn_Click(object sender, EventArgs e)
         {
-            TaskAdding ta = new TaskAdding(new Task.task_struct(), this, false, 0);
+            TaskAdding ta = new TaskAdding(new Task(), this, false, 0);
             ta.ShowDialog();
         }
 
@@ -95,7 +109,9 @@ namespace ToDoList
             DataGridViewRow row = TaskTable.CurrentRow;
             if (row != null)
             {
-                TaskAdding ta = new TaskAdding(Row_to_Struct(row), this, true, TaskTable.CurrentRow.Index);
+                Task ts = new Task();
+                ts = task_list[Convert.ToInt32(row.Cells["Index"].Value)];
+                TaskAdding ta = new TaskAdding(ts, this, true, TaskTable.CurrentRow.Index);
                 ta.ShowDialog();
             }
         }
@@ -105,8 +121,14 @@ namespace ToDoList
             DataGridViewRow row = TaskTable.CurrentRow;
             if (row != null)
             {
+                task_list.RemoveAt(Convert.ToInt32(row.Cells["Index"].Value));
+                for (int i = 0; i < task_list.Count; i++)
+                {
+                    task_list[i].index = i;
+                }
                 TaskTable.Rows.Remove(row);
             }
+            Update_Table();
         }
 
         private void StatusBttn_Click(object sender, EventArgs e)

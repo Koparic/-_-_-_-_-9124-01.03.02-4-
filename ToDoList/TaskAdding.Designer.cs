@@ -106,7 +106,7 @@
             // 
             // endingTime
             // 
-            this.endingTime.Location = new System.Drawing.Point(502, 150);
+            this.endingTime.Location = new System.Drawing.Point(503, 154);
             this.endingTime.Name = "endingTime";
             this.endingTime.Size = new System.Drawing.Size(240, 22);
             this.endingTime.TabIndex = 7;

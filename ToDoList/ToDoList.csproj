@@ -61,6 +61,7 @@
     <Compile Include="StatusForm.Designer.cs">
       <DependentUpon>StatusForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Task.cs" />
     <Compile Include="TaskAdding.cs">
       <SubType>Form</SubType>
     </Compile>
