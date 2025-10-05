@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\statusform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:statusform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|d:\\university\\\u043E\u043E\u043F_git\\-_-_-_-_-9124-01.03.02-4-\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:taskadding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|solutionrelative:task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5746C0F-76F5-48BD-AD6B-C492B731C9B9}|ToDoList.csproj|D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\statusform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TaskAdding.cs [Design]",
               "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\TaskAdding.cs",
               "RelativeDocumentMoniker": "TaskAdding.cs",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -78,20 +78,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAMwHkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwCUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-27T02:15:40.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "StatusForm.cs",
               "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\StatusForm.cs",
               "RelativeDocumentMoniker": "StatusForm.cs",
@@ -104,26 +104,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TaskAdding.cs",
               "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\TaskAdding.cs",
               "RelativeDocumentMoniker": "TaskAdding.cs",
               "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\TaskAdding.cs",
               "RelativeToolTip": "TaskAdding.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAqwDIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-28T10:40:30.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Task.cs",
               "DocumentMoniker": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Task.cs",
               "RelativeDocumentMoniker": "Task.cs",
               "ToolTip": "D:\\University\\\u041E\u041E\u041F_Git\\-_-_-_-_-9124-01.03.02-4-\\ToDoList\\Task.cs",
               "RelativeToolTip": "Task.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAMwB4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T10:07:09.364Z",
               "EditorCaption": ""

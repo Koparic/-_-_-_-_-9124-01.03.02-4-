@@ -5,12 +5,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml;
+using Newtonsoft.Json;
 
 namespace ToDoList
 {
@@ -21,6 +24,29 @@ namespace ToDoList
         public Form1()
         {
             InitializeComponent();
+            string filePath = "tasks.json";
+            if (File.Exists(filePath))
+            {
+                using (StreamReader reader = File.OpenText(filePath))
+                {
+                    string json = reader.ReadToEnd();
+                    task_list.Clear();
+                    foreach (Task task in JsonConvert.DeserializeObject<Task[]>(json))
+                        task_list.Add(task);
+                }
+            }
+            Update_Table();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            string filePath = "tasks.json";
+            using (StreamWriter writer = File.CreateText(filePath))
+            {
+                string json = JsonConvert.SerializeObject(task_list, Newtonsoft.Json.Formatting.Indented);
+                writer.Write(json);
+            }
         }
 
         private void Update_Row(int rowIndex, Task task)
@@ -83,10 +109,9 @@ namespace ToDoList
         public void AddTask(Task task, bool e, int rowNum)
         {
             if (e)
-            {
                 task_list[task.index] = task;
-            }
-            task_list.Add(task);
+            else
+                task_list.Add(task);
             Update_Table();
         }
 
@@ -140,5 +165,7 @@ namespace ToDoList
                 ta.ShowDialog();
             }
         }
+
+        
     }
 }
